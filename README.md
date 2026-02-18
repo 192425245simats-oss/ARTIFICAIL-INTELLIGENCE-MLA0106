@@ -122,4 +122,148 @@ END WHILE
 END
 
 
+PROLOG
+
+
+Facts & Rules
+
+Define facts for male, female and parent relationships
+
+Create rule: father(X,Y) if X is parent of Y and X is male
+
+Create rule: mother(X,Y) if X is parent of Y and X is female
+
+Return true if rule conditions satisfy
+
+18) Family Tree
+
+Define parent relationships
+
+Create rule: grandparent(X,Y) if X is parent of Z
+
+Check if Z is parent of Y
+
+If both true, return true
+
+19) Append Lists
+
+If first list is empty, result is second list
+
+Otherwise take head of first list
+
+Recursively append tail with second list
+
+Add head to result
+
+20) Reverse List
+
+If list is empty, return empty
+
+Separate head and tail
+
+Recursively reverse tail
+
+Append head at end of reversed tail
+
+21) Member
+
+Check if element equals head of list
+
+If yes, return true
+
+Otherwise check in tail recursively
+
+Stop when found or list ends
+
+22) Length of List
+
+If list is empty, length = 0
+
+Otherwise ignore head
+
+Recursively find length of tail
+
+Add 1 to result
+
+23) Concatenate
+
+If first list empty, result is second list
+
+Take head of first list
+
+Recursively concatenate tail with second list
+
+Add head to result
+
+24) Delete Element
+
+If head equals element, remove it
+
+Return remaining tail
+
+Otherwise keep head
+
+Recursively delete from tail
+
+25) Permutation
+
+If list empty, permutation is empty
+
+Select one element from list
+
+Remove selected element
+
+Recursively permute remaining elements
+
+26) Subset
+
+If subset list empty, return true
+
+Take first element of subset
+
+Check if it is member of main list
+
+Recursively check remaining elements
+
+27) Graph Path
+
+Define edges between nodes
+
+Path exists if direct edge present
+
+Otherwise check intermediate node
+
+Recursively search until destination found
+
+28) Factorial
+
+If N = 0, return 1
+
+Otherwise reduce N by 1
+
+Recursively compute factorial(N-1)
+
+Multiply N with result
+
+29) Fibonacci
+
+If N = 0 return 0
+
+If N = 1 return 1
+
+Otherwise compute fib(N-1) and fib(N-2)
+
+Add both results
+
+30) Animal Classification
+
+Define animal facts
+
+Create rule: mammal(X) if X is animal
+
+Check if given object matches rule
+
+Return true if satisfied
+
+
 
